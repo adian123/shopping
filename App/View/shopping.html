@@ -1,0 +1,37 @@
+<div class="container">
+    <header>
+        <span class="name">购物车</span>
+    </header>
+    <main class="content">
+        <shopcar-item
+                ng-repeat="user in userInfo"
+                user="user"
+                index="{{$index}}"></shopcar-item>
+        <div class="cho">
+            <h3><span class="all" ng-class="{allon:flag}" ng-click="checkAll()"></span><span>全选</span></h3>
+
+            <h3><span class="total">合计：<span class="money">￥{{goodsPrice}}</span></span><span></span>
+            </h3>
+            <h3 class="buy">结算({{goodsCount}})</h3>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <p>首页</p>
+            </li>
+            <li>
+                <p>消息</p>
+            </li>
+
+            <li>
+
+                <p>购物车</p>
+            </li>
+            <li>
+
+                <p>关于我</p>
+            </li>
+        </ul>
+    </footer>
+</div>
